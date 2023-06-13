@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  Physioland machines
+{% endblock title %}
+{% block content %}
+  <!-- tools Start -->
+  <div class="container-fluid py-5">
+
+    <div class="container">
+
+        <div class=" text-description text-center mx-auto" style="max-width: 500px;">
+            <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Matériels spécifiques</h5>
+            <h1 class="display-8">Professionnels de la santé qualifiés</h1>
+        </div>
+
+        <!-- <div class="owl-carousel team-carousel position-relative"> -->
+
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" style="position: relative;">
+            <div style="position: absolute; top:0; left: -300px;  display: flex;flex-direction: column; height: 100%; width: 0;"  class="carousel-indicators">
+              <img style="width: 55px;height: 55px; background-color: transparent;" src="{% static 'img/pngTools/Appareil d’amincissement.png' %}" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></img>
+              <img style="width: 55px;height: 55px; background-color: transparent;" src="{% static 'img/pngTools/Biofeedback.png' %}" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></img>
+              <img style="width: 55px;height: 55px; background-color: transparent;" src="{% static 'img/pngTools/Electrothérapie.png' %}" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></img>
+              <img style="width: 55px;height: 55px; background-color: transparent;" src="{% static 'img/pngTools/Epilation laser.png' %}" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></img>
+              <img style="width: 55px;height: 55px; background-color: transparent;" src="{% static 'img/pngTools/Hydrafacial.png' %}" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></img>
+              <img style="width: 55px;height: 55px; background-color: transparent;" src="{% static 'img/pngTools/Pressothérapie.png' %}" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></img>
+              <img style="width: 55px;height: 55px; background-color: transparent;" src="{% static 'img/pngTools/Técarthérapie.png' %}" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></img>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000" >
+                <img style="height: 600px;" src="{% static 'img/jpgTools/Appareil d’amincissement.jpg' %}" class="d-block w-100" alt="...">
+                <div class=" description_tool carousel-caption d-none d-md-block">
+                  <h3>Appareil d’amincissement</h5>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000" >
+                <img style="height: 600px;" src="{% static 'img/jpgTools/Biofeedback.jpg' %}" class="d-block w-100" alt="...">
+                <div class="description_tool carousel-caption d-none d-md-block">
+                  <h3>Biofeedback</h1>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000" >
+                <img style="height: 600px;" src="{% static 'img/jpgTools/Electrothérapie.jpg' %}" class="d-block w-100" alt="...">
+                <div class="description_tool carousel-caption d-none d-md-block">
+                  <h3>Electrothérapie</h1>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000" >
+                <img style="height: 600px;" src="{% static 'img/jpgTools/Epilation laser.jpg' %}" class="d-block w-100" alt="...">
+                <div class="description_tool carousel-caption d-none d-md-block">
+                  <h3>Epilation laser</h1>
+                </div>
+              </div>
+              <div class="carousel-item" >
+                <img style="height: 600px;" src="{% static 'img/jpgTools/Hydrafacial.jpg' %}" class="d-block w-100" alt="...">
+                <div class="description_tool carousel-caption d-none d-md-block">
+                  <h3>Hydrafacial</h1>
+                </div>
+              </div>
+              <div class="carousel-item" >
+                <img style="height: 600px;" src="{% static 'img/jpgTools/Pressothérapie.jpg' %}" class="d-block w-100" alt="...">
+                <div class="description_tool carousel-caption d-none d-md-block">
+                  <h3>Pressothérapie</h1>
+                </div>
+              </div>
+              <div class="carousel-item" >
+                <img style="height: 600px;" src="{% static 'img/jpgTools/Técarthérapie.jpg' %}" class="d-block w-100" alt="...">
+                <div class="description_tool carousel-caption d-none d-md-block">
+                  <h3>Técarthérapie</h1>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <i style="color: rgb(90, 90, 90); font-size: 40px;" class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <i style="color: rgb(90, 90, 90); font-size: 40px;" class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+            
+            
+            
+        <!-- </div> -->
+    </div>
+</div>
+<!-- tools End -->
+{% endblock %}
